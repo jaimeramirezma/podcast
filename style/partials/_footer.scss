@@ -1,0 +1,29 @@
+footer{
+width: $width-div;
+margin-left: auto;
+margin-right: auto;
+height: 121px;
+border: 1px solid red;
+    p{
+        font-family: 'IBM Plex Mono';
+        font-size: 14px;
+        margin-top: 24px;
+        margin-left: 41px;
+        margin-right: 41px;
+        color:#060A24;
+        line-height: 22px;
+    }
+
+}
+
+.flex_nets{
+        border: 1px solid $border-color-test;
+        margin-top: 16px;
+        margin-left: 41px;
+        margin-right: 41px;
+        ul{
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+}

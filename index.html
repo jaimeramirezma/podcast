@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LandingPodcast</title>
     <link rel="stylesheet" href="./style/style.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Mono">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.min.css">
 </head>
 
 <body>
@@ -19,90 +23,120 @@
                 <span></span>
                 <span></span>
                 <ul>
-                    <li><a href="#">EPISODIOS</a></li>
-                    <li><a href="#">NOSOTROS</a></li>
-                    <li><a href="#">ENTREVISTAS</a></li>
-                    <li><a href="#">TÓPICOS</a></li>
+                    <li><a href="./index.html">EPISODIOS</a></li>
+                    <li><a href="./index.html">NOSOTROS</a></li>
+                    <li><a href="./index.html">ENTREVISTAS</a></li>
+                    <li><a href="./index.html">TÓPICOS</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="div2">
-        <h1>
-            Hello world pale blue dot.
-        </h1>
-        <p>
-            Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
+    <div class=" div2">
+        <div>
+            <h1>
+                Hello <del>world</del> pale blue dot<span>.</span>
+            </h1>
+        </div>
+        <p id="parrafo1">
+            Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves
+            cada 15 días.
+        </p>
+        <p id="parrafo2">
+            El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los
+            jueves cada 15 días.
         </p>
         <a class="btn btn-primary">CONOCÉ MÁS</a>
     </div>
-    <div class="div3">
-        <h1>Episodios</h1>
+    <!--Fondo no cuadrado azul-->
 
-        <iframe src="https://open.spotify.com/embed/playlist/1KdXE3d4YyU4y2hHYa5con" width="300" height="200"
-            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <iframe src="https://open.spotify.com/embed/playlist/1KdXE3d4YyU4y2hHYa5con" width="300" height="200"
-            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <iframe src="https://open.spotify.com/embed/playlist/1KdXE3d4YyU4y2hHYa5con" width="300" height="200"
-            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <iframe src="https://open.spotify.com/embed/playlist/1KdXE3d4YyU4y2hHYa5con" width="300" height="200"
-            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
+    <div class="div3" id="episodios">
+        <section>
+            <h1 id="episodios">Episodios</h1>
+            <div class="content_grid">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" frameborder="0"
+                    allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0"
+                    allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0"
+                    allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" frameborder="0"
+                    allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </section>
+        <div class="div3_bg">
+        </div>
     </div>
-    <div class="div4">
-        <img src="./assets/images/phone.png" alt="" width="300">
 
+    <div class="div4">
+        <div>
+            <img src="./assets/images/phone.png" alt="" width="360">
+        </div>
+        <aside>
+            <h1 id="nosotros">De dónde<br> venimos</h1>
+            <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in
+                the
+                Universe, are challenged by this point of pale light.</p>
+            <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                vastness,
+                there is no hint that help will come from elsewhere to save us from ourselves.</p>
+        </aside>
     </div>
     <div class="div5">
-        <h1>De dónde venimos</h1>
-        <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
-            Universe, are challenged by this point of pale light.</p>
-        <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness,
-            there is no hint that help will come from elsewhere to save us from ourselves.</p>
+        <h1 id="entrevistas">Invitadas/os estelares</h1>
+        <div class="content_grid2">
+            <img src="./assets/images/grace-hopper.png" alt="" width="320">
+            <img src="./assets/images/Katie-Bouman.png" alt="" width="320">
+            <img src="./assets/images/Margaret_Hamilton.png" alt="" width="320">
+            <img src="./assets/images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="" width="320">
+            <img src="./assets/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+                alt="" width="320">
+            <img src="./assets/images/susan-kare.png" alt="" width="320">
+        </div>
     </div>
     <div class="div6">
-        <h1>Invitadas/os estelares</h1>
-        <img src="./assets/images/grace-hopper.png" alt="" width="320">
-        <img src="./assets/images/Katie-Bouman.png" alt="" width="320">
-        <img src="./assets/images/Margaret_Hamilton.png" alt="" width="320">
-        <img src="./assets/images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="" width="320">
-        <img src="./assets/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
-            alt="" width="320">
-        <img src="./assets/images/susan-kare.png" alt="" width="320">
-
+        <h1 id="topicos">Algunos de nuestros temas</h1>
+        <div class="content_grid3">
+            <img src="./assets/images/icon1.svg" alt="">
+            <h2>Trabajo Remoto</h2>
+            <img src="./assets/images/icon2.svg" alt="">
+            <h2>Repensando la<br> programación</h2>
+            <img src="./assets/images/icon3.svg" alt="">
+            <h2>Bases del código</h2>
+            <img src="./assets/images/icon4.svg" alt="">
+            <h2>Seguridad informática</h2>
+        </div>
     </div>
     <div class="div7">
-        <h1>Algunos de nuestros temas</h1>
-        <img src="./assets/images/icon1.svg" alt="">
-        <h2>Trabajo Remoto</h2>
-        <img src="./assets/images/icon2.svg" alt="">
-        <h2>Repensando la programación</h2>
-        <img src="./assets/images/icon3.svg" alt="">
-        <h2>Bases del código</h2>
-        <img src="./assets/images/icon4.svg" alt="">
-        <h2>Seguridad informática</h2>
-    </div>
-    <div class="div8">
-        <h1>¿Quérés las últimas novedades?</h1>
-        <a class="btn btn-primary">ESCUCHÁ LOS EPISODIOS</a>
-    </div>
-    <div class="div9">
-        <p>@ 2019 - Hello blue pale dot</p>
-        <div class="nets">
-            <ul>
-                <li><a href="https://www.facebook.com/" target="_blank" class=""><img src="./assets/images/facebook.png"
-                            width="35" alt=""></a>
-                </li>
-                <li><a href="https://www.twitter.com/" target="_blank" class=""><img
-                            src="./assets/images/Twitter-Logo.png" width="35" alt=""></a>
-                </li>
-                <li><a href="https://www.instagram.com/" target="_blank" class=""><img
-                            src="./assets/images/instagram.png" width="35" alt=""></a>
-                </li>
-            </ul>
+        <section>
+            <h1>¿Querés las últimas novedades?</h1>
+            <a class="btn btn-primary">ESCUCHÁ LOS EPISODIOS</a>
+        </section>
+        <div class="div7_bg">
         </div>
 
     </div>
+    <footer>
+        <p>@ 2019 - Hello blue pale dot</p>
+        <div class="flex_nets">
+            <ul>
+                <li>
+                    <a href="https://www.spotify.com/" target="_blank" class="a1"><i class="fab fa-spotify"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" class="b1"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank" class="c"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" class="d"> <i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.telegram.org/" target="_blank" class="e"><i class="fab fa-telegram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

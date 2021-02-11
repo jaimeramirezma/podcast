@@ -1,15 +1,26 @@
 .btn {
+    width: 288px;
+    height: 48px;
     display: inline-block;
-    font-weight: 400;
-    color: #212529;
+    font-size: 16px;
+    color: #060A24;
     text-align: center;
-    vertical-align: middle;
+    padding: 4%;
     cursor: pointer;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
+    margin-top: 36px;
+    margin-left: 16px;
+    margin-right: 16px;
+    line-height: 22px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
 }
 
 .btn-primary {
     background-color: #00F3BB;
 }
+
+.btn:hover {
+    background-image: linear-gradient(to right ,#00F0B8, #0000fe); 
+    color: white;
+    ;} 
+

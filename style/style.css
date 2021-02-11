@@ -9,8 +9,11 @@
 }
 
 header {
-  width: 100%;
+  width: 320px;
   position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   height: 44px;
   top: 0;
   padding: 10px 5%;
@@ -33,7 +36,7 @@ header nav .menu ul {
   right: 0;
   overflow: hidden;
   list-style: none;
-  background: #f2f2f2;
+  background: #0000ec;
   height: 0px;
   -webkit-transition: height 0.5s ease;
   transition: height 0.5s ease;
@@ -44,25 +47,27 @@ header nav .menu ul li {
 }
 
 header nav .menu ul li:hover {
-  background: #5a5a5a;
+  background: #00f3bb;
 }
 
 header nav .menu ul li a {
   position: relative;
   text-decoration: none;
-  color: #000;
-  padding: 16px 5%;
+  font-family: 'IBM Plex Mono';
+  font-size: 16px;
+  color: white;
+  padding: 4%;
   line-height: 28px;
   display: block;
 }
 
 header nav .menu ul li a:hover {
-  color: #fff;
+  color: black;
 }
 
 /*animación del menu que se desplega*/
 header nav .menu input[type="checkbox"]:checked ~ ul {
-  height: 240px;
+  height: 224px;
   transition: height 0.5s ease-in-out;
   -moz-transition: height 0.5s ease-in-out;
   -o-transition: height 0.5s ease-in-out;
@@ -130,80 +135,336 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 
 .div2 {
   margin-top: 44px;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
   height: 308px;
   border: 1px solid red;
   color: #060A24;
+  text-align: left;
+}
+
+.div2 #parrafo1 {
+  visibility: visible;
+}
+
+.div2 #parrafo2 {
+  visibility: hidden;
+  margin-top: -90px;
+}
+
+.div2 div {
+  width: 224px;
+  margin-top: 29px;
+  margin-left: 16px;
 }
 
 .div2 h1 {
+  font-family: 'IBM Plex Sans';
+  font-weight: 600;
   font-size: 36px;
+  color: #060A24;
+  line-height: 42px;
+}
+
+.div2 h1 span {
+  color: #060A24;
+}
+
+.div2 p {
+  font-family: 'IBM Plex Mono';
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #060A24;
+}
+
+.div2 a {
+  margin-top: 36px;
 }
 
 .div3 {
-  width: 100%;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   height: 1215.5px;
-  border: 1px solid red;
-  background-color: blue;
+  border: 1px solid yellowgreen;
+  position: relative;
+}
+
+.div3 section {
+  position: absolute;
+  z-index: 1;
+}
+
+.div3 section h1 {
+  font-family: 'IBM Plex Sans';
+  font-weight: lighter;
+  font-size: 36px;
+  margin-top: 64px;
+  margin-left: 16px;
+  color: #ffffff;
+  line-height: 42px;
+}
+
+.div3 .div3_bg {
+  position: absolute;
+  width: 100%;
+  height: 1180px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
+  background-image: linear-gradient(#0000FF, #0000A3);
+  -webkit-transform: skewY(-6deg);
+          transform: skewY(-6deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  z-index: -4;
+}
+
+.content_grid {
+  height: 943px;
+  margin-top: 21px;
+  margin-left: 11px;
+  margin-right: 11px;
+  margin-bottom: 143.5px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.content_grid iframe {
+  width: 298px;
+  height: 225px;
 }
 
 .div4 {
-  width: 100%;
-  height: 429px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 823.5px;
   border: 1px solid red;
+  position: relative;
+}
+
+.div4 img {
+  border: 1px solid red;
+  margin-top: -100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  margin-left: none;
+  margin-right: none;
+}
+
+.div4 h1 {
+  font-family: 'IBM Plex Sans';
+  font-size: 36px;
+  margin-top: 27px;
+  margin-left: 16px;
+  color: #060A24;
+  line-height: 42px;
+}
+
+.div4 p {
+  font-family: 'IBM Plex Mono';
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #060A24;
 }
 
 .div5 {
-  width: 100%;
-  height: 434.5px;
-  border: 1px solid red;
-}
-
-.div6 {
-  width: 100%;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   height: 1573px;
   border: 1px solid red;
 }
 
-.div7 {
-  width: 100%;
-  height: 1028.5px;
+.div5 h1 {
+  font-family: 'IBM Plex Sans';
+  font-size: 36px;
+  margin-top: 17px;
+  margin-left: 16px;
+  color: #060A24;
+  line-height: 42px;
+}
+
+.content_grid2 {
+  height: 900px;
+  margin-top: 14px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.div6 {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1026.5px;
   border: 1px solid red;
 }
 
-.div8 {
-  width: 100%;
+.div6 h1 {
+  font-family: 'IBM Plex Sans';
+  font-weight: lighter;
+  font-size: 36px;
+  margin-top: 48px;
+  margin-left: 16px;
+  color: #060A24;
+  line-height: 42px;
+}
+
+.content_grid3 {
+  border: 1px solid red;
+  font-family: 'IBM Plex Sans';
+  font-weight: bold;
+  margin-top: 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 130px 68px 130px 116px 130px 84px 130px 74px;
+      grid-template-rows: 130px 68px 130px 116px 130px 84px 130px 74px;
+  justify-items: center;
+}
+
+.content_grid3 img {
+  padding: 13px;
+}
+
+.div7 {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   height: 346.5px;
   border: 1px solid red;
-  background-color: blue;
-  color: white;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.div9 {
+.div7 section {
+  position: absolute;
+  z-index: 1;
+}
+
+.div7 section h1 {
+  font-family: 'IBM Plex Sans';
+  font-weight: lighter;
+  font-size: 36px;
+  margin-top: 64px;
+  margin-left: 16px;
+  color: #ffffff;
+  line-height: 42px;
+  letter-spacing: 1px;
+}
+
+.div7 .div7_bg {
+  position: absolute;
   width: 100%;
+  height: 346px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
+  background-image: linear-gradient(#0000FF, #0000A3);
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  overflow: hidden;
+  z-index: -4;
+}
+
+footer {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   height: 121px;
   border: 1px solid red;
 }
 
+footer p {
+  font-family: 'IBM Plex Mono';
+  font-size: 14px;
+  margin-top: 24px;
+  margin-left: 41px;
+  margin-right: 41px;
+  color: #060A24;
+  line-height: 22px;
+}
+
+.flex_nets {
+  border: 1px solid red;
+  margin-top: 16px;
+  margin-left: 41px;
+  margin-right: 41px;
+}
+
+.flex_nets ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .btn {
+  width: 288px;
+  height: 48px;
   display: inline-block;
-  font-weight: 400;
-  color: #212529;
+  font-size: 16px;
+  color: #060A24;
   text-align: center;
-  vertical-align: middle;
+  padding: 4%;
   cursor: pointer;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
+  margin-top: 36px;
+  margin-left: 16px;
+  margin-right: 16px;
+  line-height: 22px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
 }
 
 .btn-primary {
   background-color: #00F3BB;
 }
 
+.btn:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#00F0B8), to(#0000fe));
+  background-image: linear-gradient(to right, #00F0B8, #0000fe);
+  color: white;
+}
+
 /*menu simple con tamaño menor a 1000px*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
+  header {
+    width: 100%;
+    margin-left: none;
+    margin-right: none;
+    position: fixed;
+  }
   header nav .menu ul {
     position: relative;
     top: 0;
@@ -232,6 +493,125 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
   }
   header nav .menu span {
     display: none;
+  }
+  .btn {
+    width: 226px;
+    height: 56px;
+    margin-top: 56px;
+    font-size: 18px;
+    padding: 1.2%;
+  }
+  .div2 {
+    height: 369px;
+    width: 1440px;
+  }
+  .div2 #parrafo1 {
+    visibility: hidden;
+  }
+  .div2 #parrafo2 {
+    visibility: visible;
+  }
+  .div2 div {
+    width: 740px;
+    margin-top: 120px;
+    margin-left: 200px;
+  }
+  .div2 h1 {
+    font-size: 64px;
+    color: #060A24;
+    line-height: 84px;
+  }
+  .div2 h1 span {
+    color: #0000EC;
+  }
+  .div2 p {
+    margin-top: 40px;
+    height: 48px;
+    width: 628px;
+    margin-left: 204px;
+  }
+  .div2 a {
+    margin-top: 56px;
+    margin-left: 204px;
+  }
+  .div3 {
+    height: 1042.5px;
+    width: 1440px;
+  }
+  .div3 section h1 {
+    font-size: 48px;
+    margin-top: 186px;
+    margin-left: 200px;
+  }
+  .div3 .div3_bg {
+    height: 880px;
+  }
+  .content_grid {
+    border: 1px solid yellow;
+    height: 480px;
+    width: 1240px;
+    margin-top: 26px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 143.5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 60px;
+  }
+  .content_grid iframe {
+    width: 584px;
+    height: 232px;
+  }
+  .div4 {
+    height: 555.4px;
+    width: 1440px;
+  }
+  .div4 div {
+    height: 555.4px;
+    width: 710px;
+    border: 1px solid green;
+    display: inline-block;
+  }
+  .div4 div img {
+    width: 457.6px;
+    margin-left: 200px;
+    margin-top: -200px;
+  }
+  .div4 aside {
+    border: 1px solid blue;
+    height: 555.4px;
+    width: 710px;
+    display: inline-block;
+  }
+  .div4 aside h1 {
+    font-size: 36px;
+    margin-left: 16px;
+    color: #060A24;
+    line-height: 42px;
+  }
+  .div4 aside p {
+    color: blue;
+  }
+  .div5 {
+    height: 826px;
+    width: 1440px;
+  }
+  .div6 {
+    height: 426px;
+    width: 1440px;
+  }
+  .div7 {
+    height: 518px;
+    width: 1440px;
+  }
+  footer {
+    height: 95px;
+    width: 1440px;
   }
 }
 /*# sourceMappingURL=style.css.map */

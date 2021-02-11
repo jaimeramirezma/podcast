@@ -1,5 +1,26 @@
 .div5{
-width: 100%;
-height: 434.5px;
-border: 1px solid red;
+width: $width-div;
+margin-left: auto;
+margin-right: auto;
+height: 1573px;
+border: 1px solid $border-color-test;
+    h1{
+        font-family: 'IBM Plex Sans';
+        font-size: 36px;
+        margin-top: 17px;
+        margin-left: 16px;
+        color:#060A24;
+        line-height: 42px;
+    }
+
+}
+
+.content_grid2{
+    //border: 1px solid yellow;
+    height: 900px;
+    margin-top: 14px;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
