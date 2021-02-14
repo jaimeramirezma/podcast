@@ -15,15 +15,13 @@ h1{
 }
 
 }
-.content_grid3{
-    border: 1px solid $border-color-test;
+.content_images2{
+   // border: 1px solid yellowgreen;
     font-family: 'IBM Plex Sans';
     font-weight: bold;
     margin-top: 24px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 130px 68px 130px 116px 130px 84px 130px 74px;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
     img{
         padding: 13px;
     }

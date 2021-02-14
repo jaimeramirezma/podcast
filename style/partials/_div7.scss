@@ -4,7 +4,6 @@ margin-left: auto;
 margin-right: auto;
 height: 346.5px;
 border: 1px solid $border-color-test;
-text-align: center;
 position: relative;
 overflow: hidden;
 
@@ -16,12 +15,12 @@ overflow: hidden;
             font-weight: lighter;
             font-size: 36px;
             margin-top: 64px;
-            margin-left: 16px;
             color:#ffffff;
             line-height: 42px;
             letter-spacing: 1px;
+            text-align: center;
         }
-        
+
     }
 
     .div7_bg{

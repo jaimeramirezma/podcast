@@ -5,9 +5,10 @@ margin-right: auto;
 height: 823.5px;
 border: 1px solid $border-color-test;
 position: relative;
-    
+display: flex;
+flex-direction: column;
     img{
-        border: 1px solid $border-color-test;
+        //border: 1px solid $border-color-test;
         margin-top: -100px;
         align-self: center;
         width: 100%;
@@ -18,14 +19,18 @@ position: relative;
     h1{
         font-family: 'IBM Plex Sans';
         font-size: 36px;
+        font-weight: normal;
         margin-top: 27px;
         margin-left: 16px;
+        width: 200px;
         color:#060A24;
         line-height: 42px;
+       // border: 1px solid $border-color-test;
+
     }
     p{
         font-family: 'IBM Plex Mono';
-        font-size: 14px;
+        font-size: 16px;
         line-height: 22px;
         margin-top: 8px;
         margin-left: 16px;

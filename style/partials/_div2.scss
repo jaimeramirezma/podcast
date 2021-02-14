@@ -4,7 +4,7 @@ margin-left: auto;
 margin-right: auto;
 width: $width-div;
 height: 308px;
-border: 1px solid $border-color-test;
+//border: 1px solid $border-color-test;
 color: #060A24;
 text-align: left;
 
@@ -22,10 +22,13 @@ text-align: left;
     }
     h1{
         font-family: 'IBM Plex Sans';
+        display: inline-block;
+        margin-top: 29px;
         font-weight: 600;
         font-size: 36px;
         color:#060A24;
         line-height: 42px;
+        border: 1px solid yellowgreen;
         span{
             color: #060A24;
         }
@@ -39,6 +42,8 @@ text-align: left;
         margin-left: 16px;
         margin-right: 16px;
         color:#060A24;
+        border: 1px solid yellowgreen;
+
 
     }
 
