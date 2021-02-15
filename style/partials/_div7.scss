@@ -1,12 +1,10 @@
 .div7{
-width: $width-div;
-margin-left: auto;
-margin-right: auto;
+
 height: 346.5px;
-border: 1px solid $border-color-test;
+//border: 1px solid $border-color-test;
 position: relative;
 overflow: hidden;
-
+text-align: center;
     section{
         position: absolute;
         z-index: 1;
@@ -18,7 +16,6 @@ overflow: hidden;
             color:#ffffff;
             line-height: 42px;
             letter-spacing: 1px;
-            text-align: center;
         }
 
     }

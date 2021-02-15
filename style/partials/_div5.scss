@@ -17,12 +17,14 @@ border: 1px solid $border-color-test;
 }
 
 .content_images{
-    //border: 1px sol
-    height: 900px;
+    border: 1px solid green;
+    //height: 900px;
     margin-top: 14px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     img{
-        width: 100%;
+        width: 318px;
+        align-self: center;
     }
 }

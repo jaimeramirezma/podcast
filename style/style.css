@@ -205,10 +205,11 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 
 .div3 section h1 {
   font-family: 'IBM Plex Sans';
+  display: inline-block;
   font-weight: lighter;
   font-size: 36px;
   margin-top: 64px;
-  margin-left: 16px;
+  margin-left: 7%;
   color: #ffffff;
   line-height: 42px;
 }
@@ -227,21 +228,23 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 }
 
 .content_grid {
+  border: 1px solid red;
   height: 943px;
   margin-top: 21px;
-  margin-left: 11px;
-  margin-right: 11px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 143.5px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 5px;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .content_grid iframe {
@@ -265,14 +268,13 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
           flex-direction: column;
 }
 
-.div4 img {
+.div4 section {
+  text-align: center;
+}
+
+.div4 section img {
   margin-top: -100px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 100%;
-  margin-left: none;
-  margin-right: none;
+  width: 320px;
 }
 
 .div4 h1 {
@@ -315,27 +317,27 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 }
 
 .content_images {
-  height: 900px;
+  border: 1px solid green;
   margin-top: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .content_images img {
-  width: 100%;
+  width: 318px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .div6 {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   height: 1038px;
-  border: 1px solid red;
 }
 
 .div6 h1 {
@@ -392,13 +394,10 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 }
 
 .div7 {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   height: 346.5px;
-  border: 1px solid red;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .div7 section {
@@ -414,7 +413,6 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
   color: #ffffff;
   line-height: 42px;
   letter-spacing: 1px;
-  text-align: center;
 }
 
 .div7 .div7_bg {
@@ -432,9 +430,6 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 }
 
 footer {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   height: 121px;
   border: 1px solid red;
   display: -webkit-box;
@@ -447,6 +442,7 @@ footer {
 }
 
 footer p {
+  text-align: center;
   font-family: 'IBM Plex Mono';
   font-size: 14px;
   margin-top: 24px;
@@ -535,6 +531,27 @@ footer p {
 }
 
 /*menu simple con tamaño menor a 1000px*/
+@media screen and (min-width: 600px) {
+  .div3 {
+    height: 1042.5px;
+  }
+  .div3 section {
+    text-align: center;
+  }
+  .div3 section h1 {
+    margin-left: 0%;
+  }
+  .div3 .div3_bg {
+    height: 880px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .div5 {
+    height: 826px;
+  }
+}
+
 @media screen and (min-width: 1400px) {
   header {
     width: 100%;

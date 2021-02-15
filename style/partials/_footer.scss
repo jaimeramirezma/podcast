@@ -1,12 +1,10 @@
 footer{
-width: $width-div;
-margin-left: auto;
-margin-right: auto;
 height: 121px;
 border: 1px solid red;
 display: flex;
 flex-flow: column;
     p{
+        text-align: center;
         font-family: 'IBM Plex Mono';
         font-size: 14px;
         margin-top: 24px;

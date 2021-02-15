@@ -1,5 +1,25 @@
 /*menu simple con tamaño menor a 1000px*/
 
+@media screen and (min-width: 600px){
+    .div3{
+        height: 1042.5px;
+        section{
+            text-align: center;
+            h1{
+                margin-left: 0%;
+            }
+        }
+        .div3_bg{
+            height: 880px;
+        }        
+    } 
+
+}
+@media screen and (min-width: 640px){
+    .div5{
+        height: 826px;
+    }
+}
 @media screen and (min-width: 1400px){
     $width-div:1440px;
 

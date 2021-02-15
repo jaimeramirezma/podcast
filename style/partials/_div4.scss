@@ -7,13 +7,14 @@ border: 1px solid $border-color-test;
 position: relative;
 display: flex;
 flex-direction: column;
-    img{
-        //border: 1px solid $border-color-test;
-        margin-top: -100px;
-        align-self: center;
-        width: 100%;
-        margin-left: none;
-        margin-right: none;
+    
+    section{
+        text-align: center;
+            img{
+                //border: 1px solid $border-color-test;
+                margin-top: -100px;
+                width: 320px;
+            }
         }
 
     h1{
