@@ -1,10 +1,11 @@
 footer{
-height: 121px;
-margin-left: auto;
-margin-right: auto;
-border: 1px solid red;
-display: flex;
-flex-flow: column;
+    height: 121px;
+    margin-left: auto;
+    margin-right: auto;
+    //border: 1px solid red;
+    display: flex;
+    flex-flow: column;
+
     p{
         text-align: center;
         font-family: 'IBM Plex Mono';
@@ -15,7 +16,6 @@ flex-flow: column;
         color:#060A24;
         line-height: 22px;
     }
-
 }
 
 .flex_nets{
@@ -30,6 +30,14 @@ flex-flow: column;
             li a i{
                 height: 28px;
                 width: 16px;
+                transition: width 0s, height 0s, margin 0s;
             }
+
         }
 }
+
+.flex_nets ul li a i:hover{
+        width: 20px;
+        height: 20px;
+        transform: scale(2, 2);
+ }

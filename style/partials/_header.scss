@@ -5,8 +5,8 @@ header {
     transform: translate(-50%, 0);
     height: 44px;
     top: 0;
-    //padding: 10px 5%;
-    border: 1px solid green;
+    z-index: 100;
+    //border: 1px solid green;
 }
 header img {
     float: left;
@@ -17,7 +17,7 @@ header img {
 header nav {
     float: right;
     margin-top:10px;
-    margin-right: 7%;
+    margin-right: 6%;
 }
 header nav .menu ul {
     /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/
@@ -46,7 +46,7 @@ header nav .menu ul li a {
     font-family: 'IBM Plex Mono';
     font-size: 16px;
     color:white;
-    padding: 4%;
+    padding: 14px;
     line-height: 28px;
     display: block;
 }
