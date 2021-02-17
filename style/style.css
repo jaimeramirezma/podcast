@@ -17,6 +17,7 @@ header {
   height: 44px;
   top: 0;
   z-index: 100;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 header img {
@@ -171,7 +172,6 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
   font-size: 36px;
   color: #060A24;
   line-height: 42px;
-  border: 1px solid yellowgreen;
 }
 
 .div2 h1 span {
@@ -186,7 +186,6 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
   margin-left: 5%;
   margin-right: 5%;
   color: #060A24;
-  border: 1px solid yellowgreen;
 }
 
 .div3 {
@@ -194,7 +193,6 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
   margin-left: auto;
   margin-right: auto;
   height: 1215.5px;
-  border: 1px solid yellowgreen;
   position: relative;
 }
 
@@ -228,7 +226,6 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 }
 
 .content_grid {
-  border: 1px solid red;
   height: 943px;
   margin-top: 21px;
   margin-left: auto;
@@ -257,7 +254,6 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
   margin-left: auto;
   margin-right: auto;
   height: 823.5px;
-  border: 1px solid red;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,7 +299,6 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
   margin-left: auto;
   margin-right: auto;
   height: 1573px;
-  border: 1px solid red;
 }
 
 .div5 h1 {
@@ -317,7 +312,6 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 }
 
 .content_images {
-  border: 1px solid green;
   margin-top: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,16 +387,17 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 
 .div7 {
   height: 346.5px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   overflow: hidden;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .div7 section {
   position: absolute;
+  width: 100%;
   z-index: 1;
+  text-align: center;
 }
 
 .div7 section h1 {
@@ -491,17 +486,15 @@ footer p {
   font-size: 16px;
   font-family: 'IBM Plex Mono';
   color: #060A24;
-  padding: 1.5%;
+  padding: 13px;
   cursor: pointer;
-  line-height: 22px;
   font-weight: bold;
   display: inline-block;
   width: 288px;
   height: 48px;
-  margin-top: 10%;
+  margin-top: 50px;
   margin-left: 5%;
   text-align: center;
-  line-height: 40px;
 }
 
 .btn1:hover {
@@ -515,7 +508,7 @@ footer p {
   font-size: 16px;
   font-family: 'IBM Plex Mono';
   color: #060A24;
-  padding: 1.5%;
+  padding: 13px;
   cursor: pointer;
   line-height: 22px;
   font-weight: bold;
@@ -523,9 +516,7 @@ footer p {
   width: 288px;
   height: 48px;
   margin-top: 36px;
-  margin-left: 16px;
   text-align: center;
-  line-height: 40px;
 }
 
 .btn2:hover {
@@ -559,6 +550,12 @@ footer p {
 @media screen and (min-width: 640px) {
   .div5 {
     height: 826px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .div7 section h1 {
+    margin-top: 150px;
   }
 }
 
@@ -636,28 +633,31 @@ footer p {
     height: 48px;
     width: 628px;
     margin-left: 204px;
+    font-size: 16px;
   }
   .div2 .btn1 {
     width: 226px;
     height: 56px;
     font-size: 18px;
     margin-left: 200px;
-    line-height: 15px;
+    padding: 16px;
   }
   .div3 {
     height: 1042.5px;
     width: 1440px;
   }
+  .div3 section {
+    text-align: unset;
+  }
   .div3 section h1 {
     font-size: 48px;
     margin-top: 186px;
-    margin-left: 200px;
+    margin-left: 14%;
   }
   .div3 .div3_bg {
     height: 880px;
   }
   .content_grid {
-    border: 1px solid yellow;
     height: 480px;
     width: 1240px;
     margin-top: 26px;
@@ -766,7 +766,6 @@ footer p {
   .div7 section h1 {
     font-size: 48px;
     margin-top: 213px;
-    margin-left: 374px;
     line-height: 62px;
     letter-spacing: 1px;
   }
@@ -774,7 +773,6 @@ footer p {
     width: 345px;
     height: 56px;
     font-size: 18px;
-    margin-left: 547px;
     text-align: center;
     line-height: 30px;
   }
