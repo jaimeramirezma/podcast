@@ -240,6 +240,7 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 
 .content_grid iframe {
   width: 290px;
+  border-width: 0px;
 }
 
 .div4 {
