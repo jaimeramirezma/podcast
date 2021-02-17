@@ -1,11 +1,13 @@
+// EPISODIOS
+
+// CARACTERÍSTICAS DEL DIV CONTENEDOR
 .div3{
-width: $width-div;
-margin-left: auto;
-margin-right: auto;
-height: 1215.5px;
-//border: 1px solid yellowgreen;
-position: relative;
-    
+    width: $width-div;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1215.5px;
+    //border: 1px solid yellowgreen;
+    position: relative;
     section{
         position: absolute;
         z-index: 1;
@@ -22,6 +24,7 @@ position: relative;
         }
     }
 
+    //CARACTERÍSICAS DEL FONDO CON FIGURA GEOMÉTRICA
     .div3_bg{
         position: absolute;
         width: 100%;
@@ -33,6 +36,7 @@ position: relative;
     }
 }
 
+// CARACTERÍSTICAS DEL FLEX PARA LA DISTRIBUCIÓN DE LOS PODCAST
 .content_grid{
     //border: 1px solid red;
     height: 943px;
@@ -40,13 +44,13 @@ position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 143.5px;
-    display: inline-block;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    gap: 5px;
 
     iframe{
-        width: 298px;
-        height: 225px;
+        width: 290px;
     }
+
 }

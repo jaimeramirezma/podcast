@@ -1,10 +1,12 @@
+// DEFINICIÓN DE CARACTERÍSTICAS DEL CONTENEDOR ÚLTIMAS NOVEDADES
+
 .div7{
-height: 346.5px;
-//border: 1px solid $border-color-test;
-position: relative;
-overflow: hidden;
-margin-left: auto;
-margin-right: auto;
+    height: 346.5px;
+    //border: 1px solid $border-color-test;
+    position: relative;
+    overflow: hidden; // SE RECORTA EL FONDO GEOMÉTRICO
+    margin-left: auto;
+    margin-right: auto;
     section{
         //border: 1px solid greenyellow;
         position: absolute;
@@ -22,7 +24,7 @@ margin-right: auto;
         }
 
     }
-
+    // DEFINICIÓN DEL FONDO GEOMÉTRICO
     .div7_bg{
         position: absolute;
         width: 100%;

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0%;
   margin: 0%;
@@ -34,7 +33,6 @@ header nav {
 }
 
 header nav .menu ul {
-  /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/
   width: 100%;
   position: absolute;
   top: 44px;
@@ -70,7 +68,6 @@ header nav .menu ul li a:hover {
   color: black;
 }
 
-/*animación del menu que se desplega*/
 header nav .menu input[type="checkbox"]:checked ~ ul {
   height: 224px;
   transition: height 0.5s ease-in-out;
@@ -83,7 +80,6 @@ header nav .menu {
   padding-top: 3px;
 }
 
-/*checkbox transparente y en primer plano*/
 header nav .menu input {
   position: absolute;
   display: inline-block;
@@ -94,7 +90,6 @@ header nav .menu input {
   z-index: 2;
 }
 
-/*span -lineas del menu hamburguesa-*/
 header nav .menu span {
   display: block;
   width: 25px;
@@ -121,7 +116,6 @@ header nav .menu span:nth-last-child(2) {
           transform-origin: 0% 100%;
 }
 
-/*movimiento a cruz*/
 header nav .menu input:checked ~ span {
   opacity: 1;
   -webkit-transform: rotate(45deg) translate(2px, 1px);
@@ -231,7 +225,6 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 143.5px;
-  display: inline-block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,11 +235,11 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  gap: 5px;
 }
 
 .content_grid iframe {
-  width: 298px;
-  height: 225px;
+  width: 290px;
 }
 
 .div4 {
@@ -531,7 +524,6 @@ footer p {
           text-decoration-line: line-through;
 }
 
-/*menu simple con tamaño menor a 1000px*/
 @media screen and (min-width: 600px) {
   .div3 {
     height: 1042.5px;
@@ -658,24 +650,26 @@ footer p {
     height: 880px;
   }
   .content_grid {
-    height: 480px;
-    width: 1240px;
-    margin-top: 26px;
-    margin-left: 100px;
-    margin-right: 100px;
+    height: 560px;
+    width: 90%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 143.5px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    gap: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    gap: 5px;
   }
   .content_grid iframe {
-    width: 584px;
-    height: 232px;
+    width: 580px;
   }
   .div4 {
     height: 491.4px;

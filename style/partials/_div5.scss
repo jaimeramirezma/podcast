@@ -1,9 +1,11 @@
+// DEFINICIÓN DEL CONTENEDOR INVITADAS ESPECIALES
+
 .div5{
-width: $width-div;
-margin-left: auto;
-margin-right: auto;
-height: 1573px;
-//border: 1px solid $border-color-test;
+    width: $width-div;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1573px;
+    //border: 1px solid $border-color-test;
     h1{
         font-family: 'IBM Plex Sans';
         font-size: 36px;
@@ -15,16 +17,15 @@ height: 1573px;
     }
 
 }
-
+// SE GENERA UN CONTENEDOR CON LA PROPUEDAD FLEX QUE PERMITE ORGANIZAR LAS IMÁGENES
 .content_images{
     //border: 1px solid green;
-    //height: 900px;
     margin-top: 14px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     img{
         width: 318px;
-        align-self: center;
+        align-self: center; 
     }
 }

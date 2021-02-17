@@ -1,13 +1,16 @@
-.div2{
-margin-top: 44px;
-margin-left: auto;
-margin-right: auto;
-width: $width-div;
-height: 308px;
-//border: 1px solid $border-color-test;
-color: #060A24;
-text-align: left;
+// CONTENEDOR DE TÍTULO, PÁRRAFO Y BOTÓN
 
+.div2{
+    margin-top: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    width: $width-div;
+    height: 308px;
+    //border: 1px solid $border-color-test;
+    color: #060A24;
+    text-align: left;
+
+    // DEFINIMOS CUÁNDO ES VISIBLE CÁDA PARRÁFO SEGÚN EL MEDIAQUERY
     #parrafo1{
         visibility:visible;
     }
@@ -15,7 +18,9 @@ text-align: left;
         visibility:hidden;
         margin-top: -90px;
     }
-    div{
+    
+    // DEFINIMOS TAMAÑOS DEL DIV Y CARACTERÍSTICAS DE TÍTULO Y PÁRRAFOS
+        div{
         width: 224px;
         margin-top: 29px;
         margin-left: 5%;

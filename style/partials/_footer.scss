@@ -1,3 +1,5 @@
+
+// SE DIVIDE EL FOOTER EN 1 FILA Y 2 COLUMNAS
 footer{
     height: 121px;
     margin-left: auto;
@@ -17,7 +19,7 @@ footer{
         line-height: 22px;
     }
 }
-
+// SE DIVIDE EL CONTENIDO DE REDES SOCIALES EN UNA FILA Y UNA COLUMNA PARA CADA LOGO
 .flex_nets{
         //border: 1px solid $border-color-test;
         margin-top: 16px;
@@ -30,12 +32,13 @@ footer{
             li a i{
                 height: 28px;
                 width: 16px;
-                transition: width 0s, height 0s, margin 0s;
+                transition: width 0s, height 0s, margin 0s; // SE GENERA EL EFECTO DE TRANSICIÓN
             }
 
         }
 }
 
+// DEFINICIÓN DE EFECTO DE TRANSICIÓN CUANDO PASA EL MOUSE
 .flex_nets ul li a i:hover{
         width: 20px;
         height: 20px;

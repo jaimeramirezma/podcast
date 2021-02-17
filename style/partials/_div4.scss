@@ -1,21 +1,23 @@
+// DEFINICIÓN DEL CONTENEDOR DE DÓNDE VENIMOS
+
+// SE CREA UN CONTENEDOR Y SE LE DA LA PROPIEDAD FLEX PARA POSICIONAR AL LADO CONTENIDOS
 .div4{
-width: $width-div;
-margin-left: auto;
-margin-right: auto;
-height: 823.5px;
-//border: 1px solid $border-color-test;
-position: relative;
-display: flex;
-flex-direction: column;
-    
+    width: $width-div;
+    margin-left: auto;
+    margin-right: auto;
+    height: 823.5px;
+    //border: 1px solid $border-color-test;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     section{
         text-align: center;
-            img{
-                //border: 1px solid $border-color-test;
-                margin-top: -100px;
-                width: 320px;
-            }
+        img{
+            //border: 1px solid $border-color-test;
+            margin-top: -100px; // SE POSICIONA LA IMÁGEN POR FUERA DEL CONTENEDOR
+            width: 320px;
         }
+    }
 
     h1{
         font-family: 'IBM Plex Sans';

@@ -1,6 +1,7 @@
-/*menu simple con tamaño menor a 1000px*/
+// MEDIAQUERY PARA 600 PX
 
 @media screen and (min-width: 600px){
+    // CENTRADO DE TÍTULO DE EPISODIOS    
     .div3{
         height: 1042.5px;
         section{
@@ -9,27 +10,36 @@
                 margin-left: 0%;
             }
         }
+        // CAMBIO DE TAMAÑO DEL FONDO
         .div3_bg{
             height: 880px;
         }        
     } 
 
 }
+
+// MEDIAQUERY PARA 640 PX
+
 @media screen and (min-width: 640px){
+    // DISMINUCIÓN DEL ALTO DE LA SECCIÓN INVITADAS ESTELARES
     .div5{
         height: 826px;
     }
 }
 
+// MEDIAQUERY PARA 768 PX
+
 @media screen and (min-width: 768px){
+    // AUMENTAR EL MARGEN PARA BAJAR EL TEXTO ¿QUERÉS LAS ÚLTIMAS NOVEDADES?
     .div7 section h1{
         margin-top: 150px;
     }
 }
 
-@media screen and (min-width: 1400px){
-    $width-div:1440px;
+// MEDIAQUERY PARA 1400 PX
 
+@media screen and (min-width: 1400px){
+    // CAMBIO EN EL HEADER PARA EL NAV - MOSTRANDO LOS LINKS FUERA DEL MENÚ HAMBURGUESA
     header{
         width: 100%;
         height: 80px;
@@ -77,15 +87,17 @@
         display: none;
     }
 
+    // POSICIONAMOENTO DEL CONTENERODR DE TÍTULO, PÁRRAFO Y BOTÓN
     .div2{
         height: 369px;
         width: 1440px;
         #parrafo1{
-            visibility:hidden;
+            visibility:hidden; // OCULTA EL TEXTO DE MÓVIL
         }
         #parrafo2{
-            visibility:visible;
+            visibility:visible; // PRESENTA EL TEXTO PARA DESKTOP
         }
+        // DIMENSIONES 
         div{
             width: 740px;
             margin-top: 120px;
@@ -116,7 +128,7 @@
 
     }
 
-
+    // POSICIONAMOENTO DEL CONTENERODR DE EPISODIOS
     .div3{
         height: 1042.5px;
         width: 1440px;
@@ -128,34 +140,35 @@
                 margin-left: 14%;
             }
         }
+        //CAMBIO DE TAMAÑO DEL FONDO
         .div3_bg{
             height: 880px;
         }        
     }
-
+    // CAMBIO EN LA FORMA DE PRESENTACIÓN DE LOS PODCAST
     .content_grid{
         //border: 1px solid yellow;
-        height: 480px;
-        width: 1240px;
-        margin-top: 26px;
-        margin-left: 100px;
-        margin-right: 100px;
+        height: 560px;
+        width: 90%;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 143.5px;
-        align-items:center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 60px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap: 5px;
+
         iframe{
-            width: 584px;
-            height: 232px;
+            width: 580px;
         }
     }
 
-
+    // POSICIONAMOENTO DEL CONTENERODR DE DÓNDE VENIMOS
     .div4{
         height: 491.4px;
         width: 1440px;
-        flex-direction: row;
+        flex-direction: row; // CAMBIO DE PRESENTACIÓN DE VERTICAL A HORIZONTAL
         section{
             width: 657px;
            // border: 1px solid green;
@@ -189,6 +202,7 @@
 
     }
 
+    //POSICIONAMOENTO DEL CONTENERODR DE INVITADAS ESTELARES
     .div5{
         height: 826px;
         width: 1440px;
@@ -199,7 +213,7 @@
             margin-left: 200px;
         }
     }
-    .content_images{
+    .content_images{ // CAMBIO DE POSICIONAMIENTO DE LAS IMÁGENES
         margin-top: 36px;
         flex-flow: row wrap;
         height: 728px;
@@ -208,16 +222,19 @@
         }
     }
 
+    // POSICIONAMOENTO DEL CONTENERODR DE ALGUNOS DE NUESTROS TEMAS
     .div6{
         height: 426px;
         width: 1440px;
-        h1{
+        h1{ // REPOSICIONAMIENTO DEL TÍTULO
             margin-top: 85px;
             margin-left: 200px;
             font-size: 48px;
         }
 
     }
+
+    // REPOSICIONAMIENTO DE LAS IMÁGENES A HORIZONTAL
     .content_images2{
         //border: 1px solid blue;
         width: 1040px;
@@ -235,6 +252,8 @@
         }
 
     }
+
+    // POSICIONAMOENTO Y CARACTERÍSITICAS DEL CONTENIDO DEL CONTENERODR DE ÚLTIMAS NOVEDADES
     .div7{
         height: 518px;
         width: 1440px;
@@ -242,7 +261,6 @@
             h1{
                 font-size: 48px;
                 margin-top: 213px;
-
                 line-height: 62px;
                 letter-spacing: 1px;
             }
@@ -250,24 +268,23 @@
                 width: 345px;
                 height: 56px;
                 font-size: 18px;
-
                 text-align: center;
                 line-height: 30px;
             }
         }
 
-
+        // CAMBIO DE TAMAÑO DEL FONDO GEOMÉTRICO
         .div7_bg{
             height: 518px;
         }
     }
 
-
+    // REDIMENSIONAMIENTO DE TAMAÑOS Y POSICIONAMIENTO DEL FOOTER
     footer{
         height: 95px;
         width: 1440px;
-        display: flex;
-        flex-flow: row;
+        display: flex; 
+        flex-flow: row; // SE DIVIDE EN 1 FILA Y 2 COLUMNAS
         justify-content: space-between;
         p{
             margin-top: 36px;

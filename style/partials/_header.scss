@@ -5,10 +5,11 @@ header {
     transform: translate(-50%, 0);
     height: 44px;
     top: 0;
-    z-index: 100;
+    z-index: 100; // SE DEFINE COMO EL CONTENIDO MÁS VISIBLE
     background: rgba(255, 255, 255, 0.9);
     //border: 1px solid green;
 }
+// POSICIONAMIENTO DE LOGO Y NAV EN EL HEADER
 header img {
     float: left;
     margin-top:10px;
@@ -20,8 +21,8 @@ header nav {
     margin-top:10px;
     margin-right: 6%;
 }
+// POSICIONAMIENTO DEL MENÚ DEBAJO DEL HEADER
 header nav .menu ul {
-    /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/
     width: 100%;
     position: absolute;
     top: 44px;
@@ -54,7 +55,8 @@ header nav .menu ul li a {
 header nav .menu  ul li a:hover {
     color: black;
 } 
-/*animación del menu que se desplega*/
+
+// DEFINICIÓN DE CAJA PARA CAPTURAR EL EVENTO Y EJECUTAR LAS TRANSICIONES DE LOS SPAN
 header nav .menu input[type="checkbox"]:checked ~ ul {
     height: 224px;
     transition: height 0.5s ease-in-out;
@@ -66,7 +68,7 @@ header nav .menu {
     padding-top: 3px;
 }
 
-/*checkbox transparente y en primer plano*/
+//SE OCULTA EL CHECKBOX PERO SE PONE AL FRENTE
 header nav .menu input {
     position: absolute;
     display: inline-block;
@@ -77,7 +79,7 @@ header nav .menu input {
     z-index: 2;
 
 }
-/*span -lineas del menu hamburguesa-*/
+//CREACIÓN DE LAS LÍNEAS PARA EL MENÚ
 header nav .menu span {
     display: block;
     width: 25px;
@@ -96,7 +98,8 @@ header nav .menu span:first-child {
 header nav .menu span:nth-last-child(2) {
     transform-origin: 0% 100%;
 }
-/*movimiento a cruz*/
+
+//TRANSICIÓN EN CRUZ DE LAS LÍNEAS - EFECTO X
 header nav .menu input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(2px, 1px);

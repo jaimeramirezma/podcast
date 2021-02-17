@@ -1,19 +1,23 @@
+// DEFINICIÓN DE CARACTERÍSTICAS DE CONTENEDOR ALGUNOS DE NUESTROS TEMAS
+
+
 .div6{
-height: 1038px;
-margin-left: auto;
-margin-right: auto;
-//border: 1px solid $border-color-test;
-h1{
-    font-family: 'IBM Plex Sans';
-    font-weight: lighter;
-    font-size: 36px;
-    margin-top: 48px;
-    margin-left: 16px;  
-    color:#060A24;
-    line-height: 42px;
+    height: 1038px;
+    margin-left: auto;
+    margin-right: auto;
+    //border: 1px solid $border-color-test;
+    h1{
+        font-family: 'IBM Plex Sans';
+        font-weight: lighter;
+        font-size: 36px;
+        margin-top: 48px;
+        margin-left: 16px;  
+        color:#060A24;
+        line-height: 42px;
+    }
 }
 
-}
+//SE GENERA CONTENEDOR TIPO FLEX PARA UBICAR IMÁGENES Y TEXTOS
 .content_images2{
    // border: 1px solid yellowgreen;
     font-family: 'IBM Plex Sans';
@@ -24,10 +28,12 @@ h1{
     flex-direction: column;
     text-align: center;
     img{
-        padding: 13px;
+        padding: 13px; // TODAS LAS IMÁGENES DEBEN TENER EL MISMO PADDING
     }
+
+    // CADA TEXTO TIENE CARACTERÍSTICAS DIFERENTES, POR LO QUE SE INDIVIDUALIZAN
     h2{
-        font-size: 24px;
+        font-size: 24px; 
         margin-bottom: 36px;
     }
     h3{
